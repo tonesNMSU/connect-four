@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Connect Four</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="gameBoardContainer">
+      <div id="gameContainer">
+        <div id="player1Panel" class="player-panel">
+          <div class="player-indicator" id="player1Indicator"></div>
+          Player 1:&nbsp; <span id="player1Score">0 Wins</span>
+        </div>
+
+        <div id="player-one-pieces">
+          <div class="player-piece player1" draggable="true"></div>
+        </div>
+        <div id="gameBoard"></div>
+        <button id="resetButton">Reset Game</button>
+        <div id="player-two-pieces">
+          <div class="player-piece player2" draggable="true"></div>
+        </div>
+        <div id="player2Panel" class="player-panel">
+          <div class="player-indicator" id="player2Indicator"></div>
+          Player 2:&nbsp; <span id="player2Score">0 Wins</span>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
